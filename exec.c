@@ -43,7 +43,7 @@ int exec(char *content, stack_t **stack, unsigned int count, FILE *file)
 		}
 		j++;
 	}
-	if (op && opst[J].opcode == NULL)
+	if (op && opst[j].opcode == NULL)
 	{ fprintf(stderr, "L%d: unknown instruction %s\n", count, op);
 		fclose(file);
 		free(content);

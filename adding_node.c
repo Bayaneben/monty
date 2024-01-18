@@ -3,11 +3,11 @@
 /**
 * addingnode - to add node to top of stack
 * @head: first node
-* @nw: new value
+* @n: the new value
 * Return: None
 */
 
-void addingnode(stack_t **head, int nw)
+void addingnode(stack_t **head, int n)
 {
 	stack_t *new_node, *temp;
 
@@ -22,7 +22,7 @@ void addingnode(stack_t **head, int nw)
 	if (temp)
 		temp->prev = new_node;
 
-	new_node->nw = nw;
+	new_node->n = n;
 	new_node->next = *head;
 	new_node->prev = NULL;
 	*head = new_node;
